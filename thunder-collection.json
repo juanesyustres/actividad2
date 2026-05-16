@@ -1,0 +1,125 @@
+{
+  "clientName": "Thunder Client",
+  "collectionName": "Inventario API",
+  "collectionId": "inventario-col-001",
+  "dateExported": "2025-05-16",
+  "version": "1.1",
+  "folders": [
+    { "id": "folder-cat", "name": "Categorias", "containerId": "" },
+    { "id": "folder-prod", "name": "Productos", "containerId": "" }
+  ],
+  "requests": [
+    {
+      "id": "req-cat-01",
+      "colId": "inventario-col-001",
+      "containerId": "folder-cat",
+      "name": "Listar todas las categorias",
+      "url": "http://localhost:3000/api/categorias",
+      "method": "GET",
+      "headers": [],
+      "body": { "type": "none", "raw": "" }
+    },
+    {
+      "id": "req-cat-02",
+      "colId": "inventario-col-001",
+      "containerId": "folder-cat",
+      "name": "Obtener categoria por ID",
+      "url": "http://localhost:3000/api/categorias/1",
+      "method": "GET",
+      "headers": [],
+      "body": { "type": "none", "raw": "" }
+    },
+    {
+      "id": "req-cat-03",
+      "colId": "inventario-col-001",
+      "containerId": "folder-cat",
+      "name": "Crear categoria",
+      "url": "http://localhost:3000/api/categorias",
+      "method": "POST",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nombre\": \"Electronica\",\n  \"descripcion\": \"Productos electronicos\"\n}"
+      }
+    },
+    {
+      "id": "req-cat-04",
+      "colId": "inventario-col-001",
+      "containerId": "folder-cat",
+      "name": "Actualizar categoria",
+      "url": "http://localhost:3000/api/categorias/1",
+      "method": "PUT",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nombre\": \"Electronica y Tecnologia\",\n  \"descripcion\": \"Gadgets y accesorios\"\n}"
+      }
+    },
+    {
+      "id": "req-cat-05",
+      "colId": "inventario-col-001",
+      "containerId": "folder-cat",
+      "name": "Eliminar categoria",
+      "url": "http://localhost:3000/api/categorias/1",
+      "method": "DELETE",
+      "headers": [],
+      "body": { "type": "none", "raw": "" }
+    },
+    {
+      "id": "req-prod-01",
+      "colId": "inventario-col-001",
+      "containerId": "folder-prod",
+      "name": "Listar todos los productos",
+      "url": "http://localhost:3000/api/productos",
+      "method": "GET",
+      "headers": [],
+      "body": { "type": "none", "raw": "" }
+    },
+    {
+      "id": "req-prod-02",
+      "colId": "inventario-col-001",
+      "containerId": "folder-prod",
+      "name": "Obtener producto por ID",
+      "url": "http://localhost:3000/api/productos/1",
+      "method": "GET",
+      "headers": [],
+      "body": { "type": "none", "raw": "" }
+    },
+    {
+      "id": "req-prod-03",
+      "colId": "inventario-col-001",
+      "containerId": "folder-prod",
+      "name": "Crear producto",
+      "url": "http://localhost:3000/api/productos",
+      "method": "POST",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nombre\": \"Laptop Lenovo\",\n  \"descripcion\": \"16GB RAM\",\n  \"precio\": 2500000,\n  \"stock\": 10,\n  \"categoriaId\": 1\n}"
+      }
+    },
+    {
+      "id": "req-prod-04",
+      "colId": "inventario-col-001",
+      "containerId": "folder-prod",
+      "name": "Actualizar producto",
+      "url": "http://localhost:3000/api/productos/1",
+      "method": "PUT",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"precio\": 2300000,\n  \"stock\": 8\n}"
+      }
+    },
+    {
+      "id": "req-prod-05",
+      "colId": "inventario-col-001",
+      "containerId": "folder-prod",
+      "name": "Eliminar producto",
+      "url": "http://localhost:3000/api/productos/1",
+      "method": "DELETE",
+      "headers": [],
+      "body": { "type": "none", "raw": "" }
+    }
+  ]
+}
